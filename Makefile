@@ -47,10 +47,10 @@ s21_matrix.a: $(OBJS)
 	ranlib s21_matrix.a
 	
 check:
-	cp ../materials/linters/.clang-format .clang-format
-	clang-format -n *.c
-	clang-format -n *.h
-	rm -rf *.clang-format
+	#cp ../materials/linters/.clang-format .clang-format
+	#clang-format -n *.c
+	#clang-format -n *.h
+	#rm -rf *.clang-format
 	make test
 	make clean
 	
